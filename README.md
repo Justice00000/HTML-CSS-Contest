@@ -2,13 +2,28 @@
 
 ## Website for university alumni
 
+This is a website for university alumni that will let students check upcoming events which include campus events and professional development.
+
 -Built with HTML and CSS
+
+Website consists of:
+
+- Home/Landing Page which describes the website(aims and objectives)
+
+- Events with all necessary information.
+
+- About section displays information about each member with technical expertise.
+
+- Contact section with a form for students to reserve slots for events they want to participate in.
 
 Users should be able to:
 
 - View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
+
 - View the optimal layout for the content depending on their device's screen size
+
 - See hover states for all interactive elements on the page
+- Reserve 
 
 ### Screenshot
 

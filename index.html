@@ -8,7 +8,7 @@
     <link href="index.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
-<body class="works on smartphone">
+<body class="works_on_smartphone">
     <header>
         <div class="logo">
             <span class="logo">&#127760;</span>
@@ -16,33 +16,32 @@
             <p>...connecting the past, present and the future</p>
         </div>
         <div class="page">
-            <a href="#events">Events</a>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact Us</a>
+            <button><a href="#events">Events</a></button>
+            <button><a href="#about">About Us</a></button>
+            <button><a href="#contact">Contact Us</a></button>
+            <button><a href="#googleform">Suscribe now</a> </button>
         </div>
     </header>
-      <section id="events">
-        <h2>Upcoming Events</h2>
+    <section id="events">
+        <h3>Upcoming Events</h3>
        <section class="event-category">
         <h2>Professional Development</h2>
-        <div>
+        <div class="event">
             <h3>Robotics Hackathon</h3>
             <p>Date: October 10, 2023</p>
             <p>Location: Virtual</p>
         </div>
-        <div>
+        <div class="event">
             <h3>Alumni Round-Table Discussion</h3>
             <p>Date: November 15, 2023</p>
             <p>Location: Campus Auditorium</p>
         </div>
-        <div>
+        <div class="event">
             <h3>Know Yourself</h3>
             <p>Date: December 5, 2023</p>
             <p>Location: Local Conference Center</p>
         </div>
-    </section>
 
-    <section class="event-category">
         <h2>Campus Events</h2>
         <div class="event">
             <h3>Ikaze</h3>
@@ -59,19 +58,20 @@
             <p>Date: December 15, 2023</p>
             <p>Location: Alumni Hall</p>
         </div>
+       </section>
 
     <section id="about">
         <h2>About Us</h2>
         <p>Our alumni association is dedicated to The African Leadership University</p>
         <div class="img">
+            <p>Our mission is to create a future for the coming generation❤❤❤</p>
         <img src="./ALU.png" alt="ALU">
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Fill out the form to reserve your slots for events:</p>
         <form action="submit_form.php" method="POST">
+        <h2>Contact Us</h2>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
             <label for="email">Email:</label>
@@ -83,7 +83,7 @@
                 <option value="Event 2">Alumni Round-Table Discussion</option>
                 <option value="Event 3">Know Yourself</option>
             </select>
-            <select id="campus-event" name="Campus Events">
+            <select id="campus event" name="Campus Events" required>
                 <option>Campus Events</option>
                 <option value="Event 1">Ikaze</option>
                 <option value="Event 2">Kigali Tour</option>
@@ -106,6 +106,5 @@
             <p>&copy;JayTech 2023</p>
         </div>
     </footer>
-
-</body>
+ </body>
 </html>

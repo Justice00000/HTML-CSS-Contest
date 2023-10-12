@@ -1,12 +1,20 @@
 body, h1, h2, h3, p {
 margin : 0;
 padding : 0;
+background-image:
+}
+works_on_smartphone {
+width: 100%;
+display: flex;
+}
+body {
+background-color: gray;
 }
 header {
 display : flex;
 justify-content : space-between;
 align-items : center;
-background-color : #007acc;
+background-color : #00008B;
 color : #fff;
 padding : 20px;
 }
@@ -25,15 +33,16 @@ font-weight : bold;
 .header-tagline {
 font-size : 16px;
 }
-nav ul {
+.header a {
 list-style-type : none;
 display : flex;
 justify-content : flex-start;
 align-items : center;
-background-color : #007acc;
+background-color : ;
 padding : 10px;
 margin-left : 20px;
 text-decoration : none;
+color: white;
 }
 nav li {
 margin : 0 20px;
@@ -43,36 +52,56 @@ text-decoration : none;
 color : #fff;
 font-weight : bold;
 transition : color 0.3s;
+background-color: #FFFDCC;
 }
 nav a:hover {
-color : #005b99;
+color : white;
+}
+header button {
+ text-decoration: none;
+ background-color: gray;
+ color: white;
 }
 .event-category {
-margin : 20px;
+margin : 15px;
 padding : 20px;
-background-color : #f5f5f5;
-border-radius : 10px;
+background-image : url('Background.jpg');
+display: auto;
+background-repeat: no-repeat;
+border-radius : 50px;
 box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
 }
 .event-category h2 {
-font-size : 24px;
+font-size : 40px;
 margin-bottom : 15px;
+text-align: center;
+color: white;
 }
 .event {
-border : #ddd solid 1px;
+border : #ddd solid px;
 padding : 15px;
 margin : 15px 0;
-background-color : #fff;
-border-radius : 5px;
+background : ;
+background-repeat: no-repeat;
+display: cover
+border-radius : px;
 }
 .event h3 {
-font-size : 18px;
+font-size : 30px;
 margin-bottom : 10px;
+color: blue;
 }
+
+.event h2 {
+   color: blue;
+   text-align: center;
+   font-size: 30px;
+}
+
 #about {
 margin : 20px;
 padding : 20px;
-background-color : #007acc;
+background-color : #00008B;
 border-radius : 10px;
 box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
 }
@@ -89,9 +118,10 @@ font-size : 10px;
 form {
 margin : 20px;
 padding : 20px;
-background-color : #f5f5f5;
+background-color : gray;
 border-radius : 10px;
 box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+text-align: center;
 }
 form label {
 display : block;
@@ -99,14 +129,22 @@ font-weight : bold;
 margin-bottom : 10px;
 }
 form input[type="text"], form input[type="email"], form select {
-width : 100%;
+width : 50%;
 padding : 10px;
-margin-bottom : 15px;
+margin-bottom : 10px;
 border : #ddd solid 1px;
 border-radius : 5px;
+color: blue;
+font-size: 15px;
+text-align: center;
+}
+form h2 {
+ font-size: 50px;
+ margin-right: 930px;
+ color: #00008B;
 }
 form button[type="submit"] {
-background-color : #007acc;
+background-color : #00008B;
 color : #fff;
 padding : 10px 20px;
 border : none;
@@ -118,7 +156,7 @@ form button[type="submit"]:hover {
 background-color : #005b99;
 }
 footer {
-background : #007acc;
+background : #00008B;
 padding : 1rem;
 margin : -8px;
 }
@@ -140,6 +178,11 @@ color : white;
 opacity : 0.35;
 text-align : center;
 font-weight : 400;
-font-size : 12px;
+font-size : 15px;
 line-height : 15px;
+}
+
+.footer_nav h3 {
+  color: gray;
+  margin-right: 10px;
 }

@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body, h1, h2, h3, p {
 margin : 0;
 padding : 0;
-font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Roboto', sans-serif;
+overflow-x: hidden;
 }
 works_on_smartphone {
 width: 100%;
@@ -39,15 +40,18 @@ overflow: hidden;
 .menu-icon{
   width: 25px;
   cursor: pointer;
+  display: none;
 }
 nav{
   flex: 1;
   text-align: right;
+  padding-bottom: 25px;
 }
 nav ul li{
   list-style: none;
   display: inline-block;
   margin-right: 30px;
+  margin : 0 20px;
 }
 nav ul li a{
   text-decoration: none;
@@ -58,61 +62,54 @@ nav ul li a:hover{
   color: gainsboro;
 }
 
-.header-logo img {
-font-size : 35px;
-width : 150px;
-height : auto;
+/* welcome */
+.welcome{
+  width: 100%;
+  height: 100vh;
+  background: #d00d2d;
+  background-size: cover;
+  text-align: left;
+}
+.welcome h1{
+  color: #fff;
+  font-size: 82px;
+  padding-top: 185px;
+  padding-left: 100px;
 }
 
-.header-title {
-font-size : 28px;
-font-weight : bold;
+.welcome p{
+  color: #fff;
+  font-size: 25px;
+  padding-left: 120px;
 }
-.header-tagline {
-font-size : 16px;
-}
-.header a {
-list-style-type : none;
-display : flex;
-justify-content : flex-start;
-align-items : center;
-padding : 10px;
-margin-left : 20px;
-text-decoration : none;
-color: white;
-}
-nav li {
-margin : 0 20px;
-}
-
-
 
 .event-category {
-margin : 15px;
-padding : 20px;
-background-image : url('Background.jpg');
-display: auto;
-background-repeat: no-repeat;
-border-radius : 50px;
-box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+  margin : 15px;
+  padding : 20px;
+  background-image : url('Background.jpg');
+  display: auto;
+  background-repeat: no-repeat;
+  border-radius : 50px;
+  box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
 }
 .event-category h2 {
-font-size : 40px;
-margin-bottom : 15px;
-text-align: center;
-color: white;
+  font-size : 40px;
+  margin-bottom : 15px;
+  text-align: center;
+  color: white;
 }
 .event {
-border : #ddd solid px;
-padding : 15px;
-margin : 15px 0;
-background-repeat: no-repeat;
-display: cover
+  border : #ddd solid px;
+  padding : 15px;
+  margin : 15px 0;
+  background-repeat: no-repeat;
+  display: cover
+  
 }
 .event h3 {
-font-size : 30px;
-margin-bottom : 10px;
-color: blue;
+  font-size : 30px;
+  margin-bottom : 10px;
+  color: blue;
 }
 
 .event h2 {
@@ -122,44 +119,44 @@ color: blue;
 }
 
 #about {
-margin : 20px;
-padding : 20px;
-background-color : #00008B;
-border-radius : 10px;
-box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+  margin : 20px;
+  padding : 20px;
+  background-color : #00008B;
+  border-radius : 10px; 
+  box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
 }
 #about h2 {
-font-size : 50px;
-margin-bottom : 15px;
+  font-size : 50px;
+  margin-bottom : 15px;
 }
 #about p {
-font-size : 25px;
+  font-size : 25px;
 }
 .img {
-font-size : 10px;
+  font-size : 10px;
 }
 form {
-margin : 20px;
-padding : 20px;
-background-color : gray;
-border-radius : 10px;
-box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
-text-align: center;
+  margin : 20px;
+  padding : 20px;
+  background-color : gray;
+  border-radius : 10px;
+  box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+  text-align: center;
 }
 form label {
-display : block;
-font-weight : bold;
-margin-bottom : 10px;
+  display : block;
+  font-weight : bold;
+  margin-bottom : 10px;
 }
 form input[type="text"], form input[type="email"], form select {
-width : 50%;
-padding : 10px;
-margin-bottom : 10px;
-border : #ddd solid 1px;
-border-radius : 5px;
-color: blue;
-font-size: 15px;
-text-align: center;
+  width : 50%;
+  padding : 10px; 
+  margin-bottom : 10px;
+  border : #ddd solid 1px;
+  border-radius : 5px;  
+  color: blue;
+  font-size: 15px;
+  text-align: center;
 }
 form h2 {
  font-size: 50px;
@@ -167,45 +164,71 @@ form h2 {
  color: #00008B;
 }
 form button[type="submit"] {
-background-color : #00008B;
-color : #fff;
-padding : 10px 20px;
-border : none;
-border-radius : 5px;
-cursor : pointer;
-transition : background-color 0.3s;
+  background-color : #00008B;
+  color : #fff;
+  padding : 10px 20px;
+  border : none;
+  border-radius : 5px;
+  cursor : pointer;
+  transition : background-color 0.3s;
 }
 form button[type="submit"]:hover {
-background-color : #005b99;
+  background-color : #005b99;
 }
 footer {
-background : #00008B;
-padding : 1rem;
-margin : -8px;
+  background : #00008B;
+  padding : 1rem;
+  margin : -8px;
 }
 .footer_section {
-display : flex;
-flex-direction : column;
+  display : flex;
+  flex-direction : column;
 }
 .footer_nav {
-display : flex;
-justify-content : space-between;
-padding : 4rem 8rem 4rem 8rem;
+  display : flex;
+  justify-content : space-between;
+  padding : 4rem 8rem 4rem 8rem;
 }
 .footer_nav div a {
-margin-left : 0.4rem;
-margin-right : 0.5rem;
+  margin-left : 0.4rem;
+  margin-right : 0.5rem;
 }
 .footer_section p {
-color : white;
-opacity : 0.35;
-text-align : center;
-font-weight : 400;
-font-size : 15px;
-line-height : 15px;
+  color : white;
+  opacity : 0.35;
+  text-align : center;
+  font-weight : 400;
+  font-size : 15px;
+  line-height : 15px;
 }
 
 .footer_nav h3 {
   color: gray;
   margin-right: 10px;
+}
+
+/* For a responsive navbar */
+
+@media only screen and (max-width:700px){
+
+    nav ul{
+      width: 100%;
+      background-color: #00008B;
+      position: absolute;
+      top: 75px;
+      right: 0;
+      z-index: 2;
+    }
+
+    nav ul li{
+      display: block;
+    }
+
+    .menu-icon{
+      display: block;
+    }
+    #menuList{
+      overflow: hidden;
+      transition: 0.5s;
+    }
 }

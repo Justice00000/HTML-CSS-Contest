@@ -15,7 +15,6 @@
                     <img src="image/ALU.png" alt="">
                 </span>
                 <h1>ALUMNI ASSOCIATION</h1>
-                <p>...connecting the past, present and the future</p>
             </div>
             <div class="mobile-menu" id="mobileMenu">
                 <div class="menu-icon" onclick="toggleMobileMenu()">
@@ -49,97 +48,153 @@
     </header>
     <main>
         <section class="welcome">
-        <h1>Welcome</h1>
-        <p>...connecting the past, present and the future</p>
-    </section>
+            <h1>Welcome</h1>
+            <p>...connecting the past, present, and the future</p>
+        </section>
 
-    <section id="events-section">
-        <div class="events-background">
-        <h1>Upcoming Events</h1>
-       <section class="event-category">
-        <h2>Professional Development</h2>
-        <div class="event">
-            <img src="image/robotics.jpg" width="120px" height="120px" alt="">
-            <h3>Robotics Hackathon</h3>
-            <p>Date: October 10, 2023</p>
-            <p>Location: Virtual</p>
-        </div>
-        <div class="event">
-            <h3>Alumni Round-Table Discussion</h3>
-            <p>Date: November 15, 2023</p>
-            <p>Location: Campus Auditorium</p>
-        </div>
-        <div class="event">
-            <h3>Know Yourself</h3>
-            <p>Date: December 5, 2023</p>
-            <p>Location: Local Conference Center</p>
-        </div>
+        <!-- Events Section -->
+        <section id="events-section">
+            <h1>Upcoming Events</h1>
+            <div class="event-header">
+            <h3>Professional Development</h3>
+            </div>
+            <div class="event-category">
+                <div class="event">
+                    <img src="image/robotics.webp" width="120px" height="170px" alt="">
+                    <div class="event-details">
+                        <h4>Robotics Hackathon</h4>
+                        <p>Date: October 10, 2023</p>
+                        <p>Location: Virtual</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <img src="image/knowyourself.jpeg" width="120px" height="170px" alt="">
+                    <div class="event-details">
+                        <h4>Know Yourself</h4>
+                        <p>Date: December 5, 2023</p>
+                        <p>Location: Local Conference Center</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <img src="image/wel.jpg" width="120px" height="170px" alt="">
+                    <div class="event-details">
+                        <h4>Alumni Round-Table Discussion</h4>
+                        <p>Date: December 5, 2023/p>
+                        <p>Location: Local Conference Cente</p>
+                    </div>
+                </div>
+                
+            </div>
 
-        <h2>Campus Events</h2>
-        <div class="event">
-            <h3>Ikaze</h3>
-            <p>Date: October 20, 2023</p>
-            <p>Location: Campus Quad</p>
-        </div>
-        <div class="event">
-            <h3>Kigali Tour</h3>
-            <p>Date: November 25, 2023</p>
-            <p>Location: Sports Complex</p>
-        </div>
-        <div class="event">
-            <h3>Career Fair</h3>
-            <p>Date: December 15, 2023</p>
-            <p>Location: Alumni Hall</p>
-        </div>
-    </div>
-       </section>
+            <!-- Campus Events -->
+                <div class="event-header">
+                <h3>Campus Events</h3>
+                </div>
+                <div class="event-category">
+                    <div class="event">
+                        <img src="image/ikaze.jpeg" width="120px" height="170px" alt="">
+                        <div class="event-details">
+                            <h4>Ikaze</h4>
+                            <p>Date: October 20, 2023</p>
+                            <p>Location: Campus Quad</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <img src="image/kigali.jpeg" width="120px" height="170px" alt="">
+                        <div class="event-details">
+                            <h4>Kigali Tour</h4>
+                            <p>Date: November 25, 2023</p>
+                            <p>Location: Sports Complex</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <img src="image/careerfair.jpeg" width="120px" height="170px" alt="">
+                        <div class="event-details">
+                            <h4>Career Fair</h4>
+                            <p>Date: December 15, 2023</p>
+                            <p>Location: Alumni Hall</p>
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
 
-    <section id="about">
-
-        <h2>About Us</h2>
-        <p>Our alumni association is dedicated to The African Leadership University</p>
-        <div class="img">
-            <p>Our mission is to create a future for the coming generation❤❤❤</p>
-        <img src="images/ALU.png" alt="ALU" width="100px">
-        </div>
-    </section>
-
-    <section id="contact">
-        <form action="submit_form.php" method="POST">
-        <h2>Contact Us</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="event">Select Event:</label>
-            <select id="event" name="event">
-                <option>Professional Development</option>
-                <option value="Event 1">Robotics Hackathon</option>
-                <option value="Event 2">Alumni Round-Table Discussion</option>
-                <option value="Event 3">Know Yourself</option>
-            </select>
-            <select id="campus event" name="Campus Events" required>
-                <option>Campus Events</option>
-                <option value="Event 1">Ikaze</option>
-                <option value="Event 2">Kigali Tour</option>
-                <option value="Event 3">ALU Career Fair</option>
-            </select><br><br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-</main>
-
-    <footer>
-        <div class="footer_section">
-            <div class="footer_nav">
-               <span class="logo">&#127760;</span>
-                <h3><b><i>JAYTECH</i></b></h3>
-                <div class="social media">
-                    <a href="https://twitter.com/CJustice001"><img src="./svgs/Twitter.svg" alt="Social media"></a>
-                    <a href="https://www.instagram.com/justicechukwuonye/"><img src="./svgs/Instagram.svg" alt="Social media"></a>
+        <!-- About Section -->
+        <section>
+            <div class="team-member">
+                <div class="text">
+                    <h2>John Doe</h2>
+                    <p>Founder & CEO</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
-            <p>&copy;JayTech 2023</p>
+
+            <div class="team-member">
+                <div class="text">
+                    <h2>John Doe</h2>
+                    <p>Founder & CEO</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="text">
+                    <h2>John Doe</h2>
+                    <p>Founder & CEO</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="text">
+                    <h2>John Doe</h2>
+                    <p>Founder & CEO</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="text">
+                    <h2>John Doe</h2>
+                    <p>Founder & CEO</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+    
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <form action="submit_form.php" method="POST">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="event">Select Event:</label>
+                <select id="event" name="event">
+                    <option disabled selected>Select an Event</option>
+                    <optgroup label="Professional Development">
+                        <option value="Robotics Hackathon">Robotics Hackathon</option>
+                    </optgroup>
+                    <optgroup label="Campus Events">
+                        <option value="Ikaze">Ikaze</option>
+                    </optgroup>
+                </select><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="image/ALU.png" alt="Company Logo">
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank"><img src="image/twitter.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="image/instagram (2).png" alt="Twitter"></a>
+            </div>
         </div>
     </footer>
 

@@ -95,7 +95,8 @@ header {
 }
 
 .nav-link:hover {
-  font-size: 40px;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
 }
 
 .menu-icon {

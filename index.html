@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>JayTech University Alumni</title>
+    <title>ALU University Alumni</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="works_on_smartphone">
     <header>
-
         <div class="header-container">
             <div class="logo">
-                <span class="logo">&#127760;</span>
-                <h1>ALU ALUMNI ASSOCIATION</h1>
+                <span class="logo-picture">
+                    <img src="image/ALU.png" alt="">
+                </span>
+                <h1>ALUMNI ASSOCIATION</h1>
                 <p>...connecting the past, present and the future</p>
             </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="menu-icon" onclick="toggleMobileMenu()">
+                </div>
+                <div class="nav" id="menuList">
             <nav class="navbar-menu">
                 <ul class="nav">
                     <li class="nav-item">
@@ -42,18 +47,19 @@
 
         </div>
     </header>
-
-    <section class="welcome">
+    <main>
+        <section class="welcome">
         <h1>Welcome</h1>
         <p>...connecting the past, present and the future</p>
     </section>
 
-    <section id="events">
-        <h3>Upcoming Events</h3>
+    <section id="events-section">
+        <div class="events-background">
+        <h1>Upcoming Events</h1>
        <section class="event-category">
         <h2>Professional Development</h2>
         <div class="event">
-            <img src="images/robotics.jpg" width="120px" height="120px" alt="">
+            <img src="image/robotics.jpg" width="120px" height="120px" alt="">
             <h3>Robotics Hackathon</h3>
             <p>Date: October 10, 2023</p>
             <p>Location: Virtual</p>
@@ -85,9 +91,11 @@
             <p>Date: December 15, 2023</p>
             <p>Location: Alumni Hall</p>
         </div>
+    </div>
        </section>
 
     <section id="about">
+
         <h2>About Us</h2>
         <p>Our alumni association is dedicated to The African Leadership University</p>
         <div class="img">
@@ -119,6 +127,7 @@
             <button type="submit">Submit</button>
         </form>
     </section>
+</main>
 
     <footer>
         <div class="footer_section">
@@ -135,16 +144,22 @@
     </footer>
 
     <script>
-        var menuList = document.getElementById('menuList');
-        menuList.style.maxHeight = "0px";
-
-        function toggleMenu() {
-            if (menuList.style.maxHeight == "0px" ) {
-                menuList.style.maxHeight = "130px"
-            }else{
-                menuList.style.maxHeight ="0px"
-            }
+        function toggleMobileMenu() {
+            var mobileMenu = document.getElementById('menuList');
+            mobileMenu.style.display = (mobileMenu.style.display === 'flex') ? 'none' : 'flex';
         }
+        var menuList = document.getElementById('menuList');
+menuList.style.maxHeight = "0px";
+
+function toggleMenu() {
+    if (menuList.style.maxHeight === "0px") {
+        menuList.style.maxHeight = "130px";
+    } else {
+        menuList.style.maxHeight = "0px";
+    }
+}
+
+        
     </script>
  </body>
 </html>

@@ -26,10 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
+
+
 ### Links
 
 - Solution URL: [https://github.com/Justice00000/HTML-CSS-Contest]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 
 ### Continued development
@@ -38,6 +39,5 @@ Users should be able to:
 
 ### Useful resources
 
-- Useful online resources we used are MDN web docs and W3Schools, their examples make it easier to grasp new concepts in web
-  development
+- Useful online resources we used are MDN web docs and W3Schools, their examples make it easier to grasp new concepts in web development
 

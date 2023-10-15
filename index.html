@@ -10,6 +10,7 @@
 </head>
 <body class="works_on_smartphone">
     <header>
+
         <div class="header-container">
             <div class="logo">
                 <span class="logo">&#127760;</span>
@@ -37,13 +38,23 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
+          </nav>
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="toggleMenu()">
+
         </div>
     </header>
+
+    <section class="welcome">
+        <h1>Welcome</h1>
+        <p>...connecting the past, present and the future</p>
+    </section>
+
     <section id="events">
         <h3>Upcoming Events</h3>
        <section class="event-category">
         <h2>Professional Development</h2>
         <div class="event">
+            <img src="images/robotics.jpg" width="120px" height="120px" alt="">
             <h3>Robotics Hackathon</h3>
             <p>Date: October 10, 2023</p>
             <p>Location: Virtual</p>
@@ -82,7 +93,7 @@
         <p>Our alumni association is dedicated to The African Leadership University</p>
         <div class="img">
             <p>Our mission is to create a future for the coming generation❤❤❤</p>
-        <img src="./ALU.png" alt="ALU">
+        <img src="images/ALU.png" alt="ALU" width="100px">
         </div>
     </section>
 
@@ -123,5 +134,18 @@
             <p>&copy;JayTech 2023</p>
         </div>
     </footer>
+
+    <script>
+        var menuList = document.getElementById('menuList');
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px" ) {
+                menuList.style.maxHeight = "130px"
+            }else{
+                menuList.style.maxHeight ="0px"
+            }
+        }
+    </script>
  </body>
 </html>

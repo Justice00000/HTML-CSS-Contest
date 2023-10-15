@@ -7,55 +7,62 @@
     <title>ALU University Alumni</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="works_on_smartphone">
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <span class="logo-picture">
-                    <img src="image/ALU.png" alt="">
-                </span>
-                <h1>ALUMNI ASSOCIATION</h1>
-            </div>
-            <div class="mobile-menu" id="mobileMenu">
-                <div class="menu-icon" onclick="toggleMobileMenu()">
+<body>
+    <div class="background">
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <span class="logo-picture">
+                        <img src="image/ALU.png" alt="">
+                    </span>
+                    <h1>ALUMNI ASSOCIATION</h1>
                 </div>
-                <div class="nav" id="menuList">
-            <nav class="navbar-menu">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                </ul>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="#events" class="nav-link">Events</a>
-                    </li>
-                </ul>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                </ul>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-          </nav>
-            <img src="images/menu.png" alt="" class="menu-icon" onclick="toggleMenu()">
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                
+                    <nav class="navbar-menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link">Home</a>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#events" class="nav-link">Events</a>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">About</a>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                </nav>
+            
+              
 
         </div>
-    </header>
-    <main>
-        <section class="welcome">
-            <h1>Welcome to our page!</h1>
-            <p>Your go-to platform for staying updated on all exciting
-                events happening at our university. <br>
-                Whether it's academic seminars, mentorship programs, club meetings, or casual get-togethers,
-                we've got you covered!
-            </p>
-            
-        </section>
+        </header>
+        <main>
+            <section class="welcome">
+                <h1>Welcome to our page!</h1>
+                <p>Your go-to platform for staying updated on all exciting
+                    events happening at our university. <br>
+                    Whether it's academic seminars, mentorship programs, club meetings, or casual get-togethers,
+                    we've got you covered!
+                </p>
+                
+            </section>
+    </div>
 
         <!-- Events Section -->
         <section id="events-section">
@@ -125,7 +132,8 @@
         </section>
 
         <!-- About Section -->
-        <section>
+        <section id="about">
+            <h3>About Us</h3>
             <div class="team-member">
                 <div class="text">
                     <h2>Justice Chukwuonye</h2>
@@ -204,20 +212,9 @@
     </footer>
 
     <script>
-        function toggleMobileMenu() {
-            var mobileMenu = document.getElementById('menuList');
-            mobileMenu.style.display = (mobileMenu.style.display === 'flex') ? 'none' : 'flex';
-        }
-        var menuList = document.getElementById('menuList');
-menuList.style.maxHeight = "0px";
-
-function toggleMenu() {
-    if (menuList.style.maxHeight === "0px") {
-        menuList.style.maxHeight = "130px";
-    } else {
-        menuList.style.maxHeight = "0px";
-    }
-}
+        document.querySelector('.hamburger-icon').addEventListener('click', function() {
+            document.querySelector('.navbar-menu').classList.toggle('show');
+        });
 
         
     </script>
